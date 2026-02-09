@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  font-family: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --tw-border-width: var(--border-width);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Bind Tailwind border utilities to theme border width */
+.border {
+  border-width: var(--border-width) !important;
+}
+.border-t {
+  border-top-width: var(--border-width) !important;
+}
+.border-r {
+  border-right-width: var(--border-width) !important;
+}
+.border-b {
+  border-bottom-width: var(--border-width) !important;
+}
+.border-l {
+  border-left-width: var(--border-width) !important;
+}
+
+/* Strong off-switch for borders when BorderSwitcher is set to off */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.font-display {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.label-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.shadow-elevated {
+  box-shadow: var(--shadow-elevated);
+}

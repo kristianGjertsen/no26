@@ -2,10 +2,9 @@ import React from 'react';
 import Box from '../../components/elements/Box';
 import AboutInfoBox from './AboutInfoBox';
 import Button from '../../components/elements/Button';
-import { ADDRESS, BOOKING_URL, EMAIL, PHONE } from '../../constants';
+import { BOOKING_URL } from '../../constants';
 
 //img
-import InnsideMedPerson from '../../assets/SaloonImages/InnsideMedPerson.webp';
 import flagg from '../../assets/SaloonImages/Flagg.webp';
 import utside from '../../assets/SaloonImages/utsideLogo.webp';
 
@@ -36,19 +35,19 @@ const AboutUs: React.FC = () => {
               </Button>
             </div>
             {/* Bilde: fasade */}
-              <img
-                src={utside}
-                alt="Fasade med logo"
-                className="max-h-full max-w-full object-contain rounded-[var(--radius-image)]"
-              />
+            <img
+              src={utside}
+              alt="Fasade med logo"
+              className="max-h-full max-w-full object-contain rounded-[var(--radius-image)]"
+            />
           </div>
 
           <Box className="bg-surface">
-              <img
-                src={flagg}
-                alt="Flagg utenfor salongen"
-                className="h-auto w-auto object-contain rounded-[var(--radius-image)]"
-              />
+            <img
+              src={flagg}
+              alt="Flagg utenfor salongen"
+              className="h-auto w-auto object-contain rounded-[var(--radius-image)]"
+            />
           </Box>
         </div>
       </Box>

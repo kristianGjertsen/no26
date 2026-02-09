@@ -8,7 +8,7 @@ import { BOOKING_URL } from '../../constants';
 const promises = [
   'Rolig salongopplevelse',
   'Klassiske klipp og farger som varer',
-  'Personlig konsultasjon før hver behandling'
+  'Personlig behandling'
 ];
 
 const AboutInfoBox: React.FC = () => {

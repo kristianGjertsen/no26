@@ -29,7 +29,7 @@ const ThemeSwitcher: React.FC = () => {
   const label = themeList.find((t) => t.id === current)?.label ?? current;
 
   return (
-    <Button variant="secondary" onClick={cycleTheme} aria-label="Bytt fargetema">
+    <Button variant="primary" onClick={cycleTheme} aria-label="Bytt fargetema">
       Tema: {label}
     </Button>
   );

@@ -4,13 +4,15 @@ import Footer from './components/pageSections/Footer';
 import HomePage from './pages/homePage/HomePage';
 import AboutUs from './pages/aboutUs/AboutUs';
 import ContactPage from './pages/contact/ContactPage';
+import PricesPage from './pages/prices/PricesPage';
 import Box from './components/elements/Box';
 import StyleControls from './components/elements/StyleControls';
 
 const routes: Record<string, React.FC> = {
   '/': HomePage,
   '/om-oss': AboutUs,
-  '/kontakt': ContactPage
+  '/kontakt': ContactPage,
+  '/priser': PricesPage
 };
 
 const NotFound: React.FC = () => (

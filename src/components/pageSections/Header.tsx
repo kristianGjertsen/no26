@@ -6,6 +6,7 @@ import { BOOKING_URL } from '../../constants';
 const navItems = [
   { label: 'Hjem', href: '/' },
   { label: 'Om oss', href: '/om-oss' },
+  { label: 'Priser', href: '/priser' },
   { label: 'Kontakt', href: '/kontakt' }
 ];
 
@@ -29,9 +30,6 @@ const Header: React.FC = () => {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <a href="/" className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-[var(--radius-card)] bg-accent-soft border-[var(--border-width)] border-border flex items-center justify-center text-accent font-display text-xl">
-            N
-          </div>
           <div>
             <div className="font-display text-2xl leading-tight">No.26 Hairstyle</div>
           </div>

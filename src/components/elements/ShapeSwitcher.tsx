@@ -25,7 +25,7 @@ const ShapeSwitcher: React.FC = () => {
   };
 
   return (
-    <Button variant="secondary" onClick={toggle} aria-label="Bytt hjørnestil">
+    <Button variant="primary" onClick={toggle} aria-label="Bytt hjørnestil">
       {labels[current]}
     </Button>
   );

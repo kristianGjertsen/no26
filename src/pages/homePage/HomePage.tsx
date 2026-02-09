@@ -8,30 +8,35 @@ import { ADDRESS, BOOKING_URL, EMAIL, GOOGLE_REVIEWS_URL, PHONE } from '../../co
 const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col gap-12">
-      <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-center bg-surface border-[var(--border-width)] border-border p-8 shadow-elevated rounded-[var(--radius-shell)]">
-        <div className="space-y-4">
-          <div className="label-caps text-muted">Frisør på Innherredsveien</div>
-          <h1 className="font-display text-4xl sm:text-5xl leading-tight">
-            Klassisk håndverk med rolig atmosfære.
-          </h1>
-          <p className="text-muted text-lg">
-            Hos No. 26 Hairstyle får du en frisør som lytter, veileder og leverer tidløse resultater. Bestill time på nett eller kom innom salongen.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Button href={BOOKING_URL} target="_blank" rel="noreferrer">
-              Bestill time på nett
-            </Button>
-            <Button href="/kontakt" variant="secondary">
-              Kontakt oss
-            </Button>
+      <section className="border-[var(--border-width)] border-border rounded-[var(--radius-shell)] bg-surface p-6 sm:p-8 lg:p-10 shadow-elevated">
+        <div className="grid gap-8 lg:grid-cols-[1fr_1fr] items-center">
+          <div className="space-y-5 order-2 lg:order-1 max-w-xl">
+            <div className="label-caps text-muted">Frisør på Innherredsveien</div>
+            <h1 className="font-display text-4xl sm:text-5xl leading-tight">
+              Klassisk håndverk, rolig atmosfære.
+            </h1>
+            <p className="text-muted text-lg">
+              En liten salong med tid til deg. Presise klipp, dempede omgivelser og rådgivning som varer.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Button href={BOOKING_URL} target="_blank" rel="noreferrer">
+                Bestill time på nett
+              </Button>
+              <Button href="/kontakt" variant="secondary">
+                Kontakt oss
+              </Button>
+            </div>
           </div>
-        </div>
-        <div className="relative flex justify-end">
-          <img
-            src={utsideLogo}
-            alt="Fasaden til No. 26 Salong"
-            className="w-full max-w-md border-[var(--border-width)] border-border shadow-elevated rounded-[var(--radius-image)]"
-          />
+
+          <div className="order-1 lg:order-2">
+            <div className="w-full max-w-3xl aspect-[3/2] overflow-hidden rounded-[var(--radius-image)] border-[var(--border-width)] border-border bg-surface shadow-elevated mx-auto">
+              <img
+                src={utsideLogo}
+                alt="Fasaden til No. 26 Salong"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

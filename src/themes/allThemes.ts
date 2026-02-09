@@ -6,7 +6,18 @@ type ThemeEntry = {
   theme: Theme;
 };
 
-export type ThemeName = 'coastal' | 'warm' | 'deepHeader' | 'airy' | 'fjord' | 'slate' | 'dawn';
+export type ThemeName =
+  | 'coastal'
+  | 'mutedTurkis'
+  | 'warm'
+  | 'deepHeader'
+  | 'airy'
+  | 'fjord'
+  | 'slate'
+  | 'dawn'
+  | 'charcoal'
+  | 'rose'
+  | 'forest';
 
 export const themeList: ThemeEntry[] = [
   {
@@ -37,6 +48,41 @@ export const themeList: ThemeEntry[] = [
       sage: '#d7e5de',
       clay: '#d6c5b4',
       header: '#ffffff',
+      'radius-shell': '0px',
+      'radius-card': '0px',
+      'radius-image': '0px',
+      'radius-pill': '0px',
+      'border-width': '1px'
+    }
+  },
+  {
+    id: 'mutedTurkis',
+    label: 'dus turkis',
+    theme: {
+      background: '#e3ece8',
+      surface: '#ffffff',
+      'surface-warm': '#eef3f1',
+      'surface-soft': '#b9d7cd',
+      text: '#1d2623',
+      muted: '#4b5a56',
+      border: '#d5e2de',
+      'border-soft': '#dfe9e5',
+      'border-ink': 'rgba(35,48,44,0.09)',
+      button: '#93c0b7',
+      'button-text': '#ffffff',
+      accent: '#000000',
+      'accent-dark': '#64877f',
+      'accent-soft': '#f7fbfa',
+      'accent-haze': 'rgba(109,148,140,0.16)',
+      'ink-haze': 'rgba(35,48,44,0.05)',
+      'hero-start': '#f1f6f4',
+      'hero-end': '#e3ece8',
+      'hero-glow': 'rgba(227,236,232,0.72)',
+      'hero-shadow': 'rgba(109,148,140,0.18)',
+      'shadow-elevated': '0 18px 40px rgba(23,33,31,0.1)',
+      sage: '#e4eee9',
+      clay: '#d6c9bd',
+      header: '#f7fbfa',
       'radius-shell': '0px',
       'radius-card': '0px',
       'radius-image': '0px',
@@ -212,6 +258,111 @@ export const themeList: ThemeEntry[] = [
       sage: '#dbe5dd',
       clay: '#d6c5b4',
       header: '#5f8d85',
+      'radius-shell': '0px',
+      'radius-card': '0px',
+      'radius-image': '0px',
+      'radius-pill': '0px',
+      'border-width': '1px'
+    }
+  },
+  {
+    id: 'charcoal',
+    label: 'kull',
+    theme: {
+      background: '#0f1419',
+      surface: '#171d24',
+      'surface-warm': '#1c232c',
+      'surface-soft': '#121820',
+      text: '#e7ecef',
+      muted: '#99a5af',
+      border: '#1f2730',
+      'border-soft': '#26303a',
+      'border-ink': 'rgba(231,236,239,0.1)',
+      button: '#4b8dff',
+      'button-text': '#0b1220',
+      accent: '#8bb7ff',
+      'accent-dark': '#3c6fb8',
+      'accent-soft': '#1b2735',
+      'accent-haze': 'rgba(75,141,255,0.16)',
+      'ink-haze': 'rgba(0,0,0,0.35)',
+      'hero-start': '#131a22',
+      'hero-end': '#0f1419',
+      'hero-glow': 'rgba(75,141,255,0.18)',
+      'hero-shadow': 'rgba(0,0,0,0.45)',
+      'shadow-elevated': '0 18px 40px rgba(0,0,0,0.35)',
+      sage: '#1d2a32',
+      clay: '#2c3a42',
+      header: '#171d24',
+      'radius-shell': '8px',
+      'radius-card': '12px',
+      'radius-image': '12px',
+      'radius-pill': '999px',
+      'border-width': '1px'
+    }
+  },
+  {
+    id: 'rose',
+    label: 'rose',
+    theme: {
+      background: '#f8f1f3',
+      surface: '#ffffff',
+      'surface-warm': '#f5e9ed',
+      'surface-soft': '#f0dfe5',
+      text: '#2d2528',
+      muted: '#5a4a50',
+      border: '#ead9df',
+      'border-soft': '#f1e5ea',
+      'border-ink': 'rgba(45,37,40,0.08)',
+      button: '#d46b87',
+      'button-text': '#ffffff',
+      accent: '#c15c78',
+      'accent-dark': '#a14a63',
+      'accent-soft': '#f6e4eb',
+      'accent-haze': 'rgba(212,107,135,0.16)',
+      'ink-haze': 'rgba(45,37,40,0.05)',
+      'hero-start': '#fdeff4',
+      'hero-end': '#f8f1f3',
+      'hero-glow': 'rgba(212,107,135,0.22)',
+      'hero-shadow': 'rgba(161,74,99,0.16)',
+      'shadow-elevated': '0 18px 40px rgba(79,41,52,0.12)',
+      sage: '#f2e8eb',
+      clay: '#e5d4cc',
+      header: '#ffffff',
+      'radius-shell': '0px',
+      'radius-card': '0px',
+      'radius-image': '12px',
+      'radius-pill': '24px',
+      'border-width': '1px'
+    }
+  },
+  {
+    id: 'forest',
+    label: 'skog',
+    theme: {
+      background: '#e8eee7',
+      surface: '#ffffff',
+      'surface-warm': '#e5ede3',
+      'surface-soft': '#d8e3d7',
+      text: '#1f2a22',
+      muted: '#4b5a4f',
+      border: '#d1ddcf',
+      'border-soft': '#dde7d9',
+      'border-ink': 'rgba(31,42,34,0.1)',
+      button: '#4f7c5c',
+      'button-text': '#ffffff',
+      accent: '#6a9b75',
+      'accent-dark': '#3f6b4f',
+      'accent-soft': '#e2ede4',
+      'accent-haze': 'rgba(79,124,92,0.16)',
+      'ink-haze': 'rgba(31,42,34,0.06)',
+      'hero-start': '#f1f6f0',
+      'hero-end': '#e8eee7',
+      'hero-glow': 'rgba(122,161,133,0.28)',
+      'hero-shadow': 'rgba(79,124,92,0.18)',
+      'shadow-elevated': '0 18px 40px rgba(23,32,26,0.12)',
+      sage: '#dfe9de',
+      clay: '#d4c8bc',
+      header: '#ffffff',
       'radius-shell': '0px',
       'radius-card': '0px',
       'radius-image': '0px',

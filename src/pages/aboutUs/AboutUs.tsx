@@ -4,6 +4,11 @@ import AboutInfoBox from './AboutInfoBox';
 import Button from '../../components/elements/Button';
 import { ADDRESS, BOOKING_URL, EMAIL, PHONE } from '../../constants';
 
+//img
+import InnsideMedPerson from '../../assets/SaloonImages/InnsideMedPerson.webp';
+import flagg from '../../assets/SaloonImages/Flagg.webp';
+import utside from '../../assets/SaloonImages/utsideLogo.webp';
+
 const AboutUs: React.FC = () => {
   return (
     <div className="flex flex-col gap-10">
@@ -30,15 +35,20 @@ const AboutUs: React.FC = () => {
                 Kontakt oss
               </Button>
             </div>
+            {/* Bilde: fasade */}
+              <img
+                src={utside}
+                alt="Fasade med logo"
+                className="max-h-full max-w-full object-contain rounded-[var(--radius-image)]"
+              />
           </div>
 
           <Box className="bg-surface">
-            <div className="label-caps text-muted mb-2">Praktisk info</div>
-            <ul className="space-y-2 text-muted">
-              <li><strong>Adresse:</strong> {ADDRESS}</li>
-              <li><strong>Telefon:</strong> <a className="text-button font-semibold" href={`tel:${PHONE}`}>{PHONE}</a></li>
-              <li><strong>E-post:</strong> <a className="text-button font-semibold" href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
-            </ul>
+              <img
+                src={flagg}
+                alt="Flagg utenfor salongen"
+                className="h-auto w-auto object-contain rounded-[var(--radius-image)]"
+              />
           </Box>
         </div>
       </Box>
@@ -48,7 +58,7 @@ const AboutUs: React.FC = () => {
           <div className="label-caps text-muted">Her finner du oss</div>
           <h2 className="font-display text-3xl">Innherredsveien 26, Trondheim.</h2>
           <p className="text-muted">Åpne kartet og legg ruta før timen.</p>
-          <div className="border-[var(--border-width)] border-border overflow-hidden h-64 sm:h-72 max-w-3xl">
+          <div className="border-[var(--border-width)] border-border overflow-hidden h-64 sm:h-120 max-w-3xl">
             <iframe
               title="Kart til No. 26 Salong"
               src="https://www.google.com/maps?q=Innherredsveien+26,+7042+Trondheim&output=embed"

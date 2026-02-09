@@ -5,7 +5,7 @@ import Button from '../../components/elements/Button';
 import { BOOKING_URL } from '../../constants';
 
 //img
-import flagg from '../../assets/SaloonImages/Flagg.webp';
+import flagg from '../../assets/SaloonImages/flagg.webp';
 import utside from '../../assets/SaloonImages/utsideLogo.webp';
 
 const AboutUs: React.FC = () => {

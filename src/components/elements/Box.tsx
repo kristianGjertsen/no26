@@ -9,7 +9,7 @@ type BoxProps = {
 const Box: React.FC<BoxProps> = ({ children, className, ...rest }) => (
   <div
     className={cn(
-      'rounded-[var(--radius-shell)] border-[var(--border-width)] border-border bg-surface p-6 shadow-elevated',
+      'rounded-[var(--radius-shell)] border-[var(--border-width)] border-border bg-accent-soft p-6 shadow-elevated',
       className
     )}
     {...rest}

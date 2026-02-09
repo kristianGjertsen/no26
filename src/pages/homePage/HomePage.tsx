@@ -35,14 +35,19 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2">
-        <Box className="bg-accent-soft">
-          <div className="label-caps text-muted mb-2">Kontakt & åpningstider</div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            <div className="space-y-1">
-              <div className="font-semibold">Telefon</div>
-              <a className="block font-semibold" href={`tel:${PHONE}`}>{PHONE}</a>
-              <a className="text-button font-semibold" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+      <section className="grid gap-6 md:grid-cols-2 items-start">
+        <Box className="bg-accent-soft h-full space-y-3">
+          <div className="label-caps text-muted">Kontakt</div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
+                <span className="text-sm text-muted">Telefon</span>
+                <a className="font-display text-2xl leading-tight" href={`tel:${PHONE}`}>{PHONE}</a>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-sm text-muted">E-post</span>
+                <a className="font-semibold text-button break-words" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              </div>
             </div>
             <div className="space-y-1 text-sm">
               <div className="font-semibold text-base">Åpningstider</div>
@@ -56,10 +61,28 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </Box>
-        <Box className="bg-accent-soft">
-          <div className="label-caps text-muted mb-2">Adresse</div>
-          <p className="font-semibold">{ADDRESS}</p>
-          <a className="text-button font-semibold" href={`https://maps.google.com/?q=${encodeURIComponent(ADDRESS)}`}>Se kart</a>
+        <Box className="bg-accent-soft space-y-3 h-full">
+          <div className="label-caps text-muted">Adresse</div>
+          <div className="space-y-2">
+            <p className="font-display text-xl leading-snug">{ADDRESS}</p>
+            <a
+              className="text-button font-semibold"
+              href={`https://maps.google.com/?q=${encodeURIComponent(ADDRESS)}`}
+            >
+              Åpne i Google Maps
+            </a>
+          </div>
+          <div className="border-[var(--border-width)] border-border rounded-[var(--radius-card)] overflow-hidden h-48">
+            <iframe
+              title="Kart til No. 26 Salong"
+              src={`https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed&z=16`}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </Box>
       </section>
 

@@ -33,7 +33,7 @@ function App() {
     <div className="min-h-screen bg-background text-text flex flex-col">
       <Header />
       <StyleControls />
-      <main className="flex-1 px-7 sm:px-10 lg:px-14 pt-10 pb-16 flex flex-col gap-10">
+      <main className="flex-1 px-7 sm:px-10 lg:px-14 pt-24 pb-16 flex flex-col gap-10">
         <CurrentPage />
       </main>
       <Footer />

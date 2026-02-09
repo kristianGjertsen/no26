@@ -14,15 +14,15 @@ const promises = [
 const AboutInfoBox: React.FC = () => {
   return (
     <Box className="bg-surface">
-      <div className="grid gap-10 lg:grid-cols-2 items-center justify-between">
+      <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
         <div className="space-y-4 order-2 lg:order-1">
           <div className="label-caps text-muted">Om salongen</div>
-          <h2 className="font-display text-3xl">No. 26 handler om ro, presisjon og klassisk stil.</h2>
+          <h2 className="font-display text-3xl">No. 26  Hairstyle handler om ro, presisjon og klassisk stil.</h2>
           <p className="text-muted">
             Vi er et lite, erfarent team som prioriterer tid til rådgivning og rene linjer i håndverket. Interiøret og
             fasaden speiler uttrykket: dempet, rolig og tidløst.
           </p>
-          <div className="bg-accent-soft border-[var(--border-width)] border-border p-4">
+          <div className="bg-accent-soft border-[var(--border-width)] rounded-[var(--radius-shell)] border-border p-4">
             <div className="font-semibold mb-2">Våre løfter</div>
             <ul className="space-y-2 text-muted">
               {promises.map((item) => (
@@ -40,11 +40,11 @@ const AboutInfoBox: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-start lg:justify-end w-100 order-1 lg:order-2">
+        <div className="flex justify-start lg:justify-end w-full order-1 lg:order-2">
           <img
             src={inngangPerson}
             alt="Kunde ved inngang"
-            className="border-[var(--border-width)] border-border shadow-elevated w-full max-w-xs h-auto object-cover rounded-[var(--radius-image)]"
+            className="border-[var(--border-width)] border-border shadow-elevated w-75 max-w-xs lg:max-w-sm h-auto object-cover rounded-[var(--radius-image)] lg:ml-auto"
           />
         </div>
       </div>

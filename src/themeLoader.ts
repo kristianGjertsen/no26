@@ -71,11 +71,6 @@ export const applyTheme = (customTheme: Theme = theme) => {
     setVar(`--color-${typedKey}`, String(value));
   });
 
-  // Fallback: if header not provided, mirror surface
-  if (!('header' in customTheme)) {
-    setVar('--color-header', String(customTheme.surface));
-  }
-
   applyRadiusOverride();
 };
 
